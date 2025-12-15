@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-body;
+}
+
+@layer base {
+  :root {
+    --background: 180 100% 93.9%; /* Light Cyan #E0FFFF */
+    --foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --card: 180 60% 97%; /* Lighter Cyan for Cards */
+    --card-foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --popover: 180 60% 97%; /* Lighter Cyan for Popovers */
+    --popover-foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --primary: 195 100% 50%; /* Deep Sky Blue #00BFFF */
+    --primary-foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --secondary: 195 60% 85%; /* Lighter, less saturated Deep Sky Blue */
+    --secondary-foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --muted: 180 40% 90%; /* Muted Cyan */
+    --muted-foreground: 180 30% 40%; /* Darker Muted Cyan */
+
+    --accent: 225 73.3% 56.9%; /* Royal Blue #4169E1 */
+    --accent-foreground: 0 0% 98%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 195 40% 80%; /* Cyan-ish Border */
+    --input: 195 40% 88%; /* Cyan-ish Input Background */
+    --ring: 195 100% 50%; /* Deep Sky Blue for Ring */
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, can be adjusted if a sidebar is added */
+    --sidebar-background: 210 30% 15%; /* Darker blue for sidebar */
+    --sidebar-foreground: 0 0% 90%; /* Light grey for sidebar text */
+    --sidebar-primary: 195 100% 60%; /* Brighter Deep Sky Blue for sidebar primary elements */
+    --sidebar-primary-foreground: 210 40% 9.8%; /* Dark Blue */
+    --sidebar-accent: 225 73.3% 65%; /* Lighter Royal Blue for sidebar accent */
+    --sidebar-accent-foreground: 0 0% 98%; /* White */
+    --sidebar-border: 210 30% 25%;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  .dark {
+    --background: 210 30% 12%; /* Dark Blue-Gray */
+    --foreground: 180 100% 93.9%; /* Light Cyan */
+
+    --card: 210 30% 18%; /* Darker Blue-Gray for Cards */
+    --card-foreground: 180 100% 93.9%; /* Light Cyan */
+
+    --popover: 210 30% 18%; /* Darker Blue-Gray for Popovers */
+    --popover-foreground: 180 100% 93.9%; /* Light Cyan */
+
+    --primary: 195 100% 60%; /* Lighter Deep Sky Blue */
+    --primary-foreground: 210 40% 9.8%; /* Dark Blue */
+
+    --secondary: 195 50% 30%; /* Darker, less saturated Deep Sky Blue */
+    --secondary-foreground: 180 100% 93.9%; /* Light Cyan */
+
+    --muted: 210 25% 25%; /* Muted Dark Blue */
+    --muted-foreground: 180 40% 70%; /* Lighter Muted Cyan */
+
+    --accent: 225 73.3% 65%; /* Lighter Royal Blue */
+    --accent-foreground: 0 0% 98%; /* White */
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 30% 30%; /* Dark Blue-Gray Border */
+    --input: 210 30% 22%; /* Dark Blue-Gray Input Background */
+    --ring: 195 100% 60%; /* Lighter Deep Sky Blue for Ring */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Sidebar dark theme colors */
+    --sidebar-background: 210 30% 10%; 
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 195 100% 55%;
+    --sidebar-primary-foreground: 210 40% 9.8%;
+    --sidebar-accent: 225 73.3% 60%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 30% 20%;
+    --sidebar-ring: 195 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
